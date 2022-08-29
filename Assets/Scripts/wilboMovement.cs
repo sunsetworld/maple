@@ -19,26 +19,21 @@ public class wilboMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            wilboJump();
-        }
-        Debug.Log(_myRigidbody.velocity );
+        // Debug.Log(_myRigidbody.velocity );
     }
 
     void OnJump(InputValue action)
     {
         if (action.isPressed)
         {
-            Instantiate(wilbo, transform.position, Quaternion.identity);
-            wilboJump();
+            // Instantiate(wilbo, transform.position, Quaternion.identity);
+            wilboJump(1);
         }
     }
 
-    void wilboJump()
+    public void wilboJump(int amount)
     {
-        Debug.Log("Wilbo should jump.");
-        _myRigidbody.velocity = _myRigidbody.velocity + velocity;
+        _myRigidbody.velocity = _myRigidbody.velocity + velocity * amount;
 
     }
     
