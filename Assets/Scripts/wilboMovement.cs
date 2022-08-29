@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class wilboMovement : MonoBehaviour
 {
     private Rigidbody2D _myRigidbody;
+    [SerializeField] private GameObject wilbo;
 
     public Vector2 velocity;
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class wilboMovement : MonoBehaviour
     {
         if (action.isPressed)
         {
+            Instantiate(wilbo, transform.position, Quaternion.identity);
             wilboJump();
         }
     }

@@ -128,7 +128,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: ebcda67af5e38d7488f948cde56f29a6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -286,7 +286,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: ebcda67af5e38d7488f948cde56f29a6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -445,7 +445,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: ebcda67af5e38d7488f948cde56f29a6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -493,7 +493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96bb085f9e9f5d44a9331416198fb64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 5, y: 5}
+  wilbo: {fileID: 3107552378051976568}
+  velocity: {x: 50, y: 50}
 --- !u!1 &3107552377484813792
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +623,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: ebcda67af5e38d7488f948cde56f29a6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -817,7 +818,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: ebcda67af5e38d7488f948cde56f29a6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -975,7 +976,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.1
+  m_GravityScale: 1
   m_Material: {fileID: 6200000, guid: ebcda67af5e38d7488f948cde56f29a6, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
