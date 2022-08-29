@@ -21,7 +21,7 @@ public class TrampolineObj : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            
+            FindObjectOfType<wilboMovement>().wilboJump(boostAmount);
         }
     }
 
