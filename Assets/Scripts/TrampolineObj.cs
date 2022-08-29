@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TrampolineObj : MonoBehaviour
 {
+    [SerializeField] int boostAmount = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,13 @@ public class TrampolineObj : MonoBehaviour
     {
         
     }
-
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            FindObjectOfType<wilboMovement>().wilboJump(2);
+          FindObjectOfType<wilboMovement>().wilboJump(boostAmount);
         }
     }
+
+
 }
