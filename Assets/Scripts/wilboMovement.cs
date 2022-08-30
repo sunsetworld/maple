@@ -8,6 +8,8 @@ public class wilboMovement : MonoBehaviour
     private Rigidbody2D _myRigidbody;
     [SerializeField] private GameObject wilbo;
 
+    [SerializeField] ParticleSystem myParticleSystem;
+
     public Vector2 velocity;
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,7 @@ public class wilboMovement : MonoBehaviour
     public void wilboJump(int amount)
     {
         _myRigidbody.velocity = _myRigidbody.velocity + velocity * amount;
+        myParticleSystem.Play();
 
     }
    
