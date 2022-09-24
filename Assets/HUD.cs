@@ -5,7 +5,8 @@ using TMPro;
 
 public class HUD : MonoBehaviour
 {
-    [SerializeField] Timer _timer;
+    Timer _timer;
+    
 
     [SerializeField] TextMeshProUGUI _timerTxt;
     // Start is called before the first frame update
@@ -22,5 +23,6 @@ public class HUD : MonoBehaviour
         {
             _timerTxt.text = _timer.GetTimer().ToString("F2");
         }
+        
     }
 }

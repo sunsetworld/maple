@@ -6,6 +6,7 @@ public class Timer : MonoBehaviour
 {
     private float _gameTime;
     [SerializeField] float finishTime = 60;
+    private wilboMovement wilbo;
 
     private bool _timesUp;
     // Start is called before the first frame update
@@ -13,6 +14,7 @@ public class Timer : MonoBehaviour
     {
         _gameTime = 0;
         _timesUp = false;
+        wilbo = GetComponent<wilboMovement>();
     }
 
     // Update is called once per frame
@@ -26,21 +28,27 @@ public class Timer : MonoBehaviour
         }
 
         checkForTimesUp();
+        
+        Debug.Log("Times up: " + _timesUp);
+        
+        GameOver();
+        
     }
 
     void checkForTimesUp()
     {
         if (_gameTime >= finishTime)
-        {
-            _timesUp = true;
-        }
-        else if (_gameTime < finishTime)
-        {
-            _timesUp = false;
-        }
+            {
+                _timesUp = true;
+            }
+            else if (_gameTime < finishTime)
+            {
+                _timesUp = false;
+            }
+
     }
 
-    bool GetTimesUp()
+    public bool GetTimesUp()
     {
         return _timesUp;
     }
@@ -48,5 +56,18 @@ public class Timer : MonoBehaviour
     public float GetTimer()
     {
         return _gameTime;
+    }
+
+    public void TimesUp()
+    {
+        _timesUp = true;
+    }
+
+    void GameOver()
+    {
+        if (_timesUp)
+        {
+            wilbo.GameOver();
+        }
     }
 }

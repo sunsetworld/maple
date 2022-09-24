@@ -13,11 +13,16 @@ public class wilboMovement : MonoBehaviour
     public Vector2 velocity;
 
     private Timer _timer;
+    
+    bool _hasJumped;
+    
+    public bool wilboHasStopped = false;
     // Start is called before the first frame update
     void Start()
     {
         _myRigidbody = GetComponent<Rigidbody2D>();
         _timer = GetComponent<Timer>();
+        _hasJumped = false;
 
     }
 
@@ -32,15 +37,28 @@ public class wilboMovement : MonoBehaviour
         if (action.isPressed)
         {
             // Instantiate(wilbo, transform.position, Quaternion.identity);
-            wilboJump(1);
+            if (!_hasJumped)
+            {
+                wilboJump(1);
+                _hasJumped = true;
+            }
         }
     }
 
     public void wilboJump(int amount)
     {
-        _myRigidbody.velocity = _myRigidbody.velocity + velocity * amount;
-        myParticleSystem.Play();
+        if (!_timer.GetTimesUp())
+        {
+            _myRigidbody.velocity = _myRigidbody.velocity + velocity * amount;
+            myParticleSystem.Play();
+        }
 
+    }
+    
+
+    public void GameOver()
+    {
+        
     }
    
     
