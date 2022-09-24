@@ -11,10 +11,13 @@ public class wilboMovement : MonoBehaviour
     [SerializeField] ParticleSystem myParticleSystem;
 
     public Vector2 velocity;
+
+    private Timer _timer;
     // Start is called before the first frame update
     void Start()
     {
         _myRigidbody = GetComponent<Rigidbody2D>();
+        _timer = GetComponent<Timer>();
 
     }
 
