@@ -587,6 +587,7 @@ MonoBehaviour:
   wilbo: {fileID: 3107552378051976568}
   myParticleSystem: {fileID: 0}
   velocity: {x: 50, y: 50}
+  HUDTxt: {fileID: 0}
   wilboHasStopped: 0
 --- !u!114 &3660348935477794351
 MonoBehaviour:

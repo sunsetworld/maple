@@ -15,6 +15,8 @@ public class wilboMovement : MonoBehaviour
     private Timer _timer;
     
     bool _hasJumped;
+
+    public Animator HUDTxt;
     
     public bool wilboHasStopped = false;
     // Start is called before the first frame update
@@ -60,7 +62,11 @@ public class wilboMovement : MonoBehaviour
     {
         
     }
-   
+
+    public bool GetHasJumped()
+    {
+        return _hasJumped;
+    }
     
     
 }
