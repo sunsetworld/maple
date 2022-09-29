@@ -20,4 +20,9 @@ public class startingPoint : MonoBehaviour
     {
         
     }
+
+    public GameObject GetWilboInGame()
+    {
+        return wilbo;
+    }
 }
