@@ -2842,17 +2842,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6976936506308651429, guid: 7bd2c70750eb54c48b75c2d9995b3c98, type: 3}
   m_PrefabInstance: {fileID: 917099095}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &948746612 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3504182, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
-  m_PrefabInstance: {fileID: 6118047591192402898}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &950311276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7090,7 +7079,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3504181, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 796740308, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
       propertyPath: m_IsActive
@@ -7100,10 +7089,6 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 796740310}
-    - target: {fileID: 1405703961, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
-      propertyPath: _scoreTxt
-      value: 
-      objectReference: {fileID: 948746612}
     - target: {fileID: 5648966037558779634, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
       propertyPath: m_Name
       value: HUD
