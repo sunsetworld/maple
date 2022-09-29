@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 207840011709656677}
   - component: {fileID: 8157472694376724093}
   - component: {fileID: 3660348935477794351}
+  - component: {fileID: 4439171896623151322}
   m_Layer: 0
   m_Name: WilboBody
   m_TagString: Player
@@ -602,6 +603,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishTime: 60
+--- !u!114 &4439171896623151322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107552376923007847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c6872772302024abc3910bbb211c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3107552377484813792
 GameObject:
   m_ObjectHideFlags: 0
