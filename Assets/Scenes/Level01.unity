@@ -720,6 +720,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &126430268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3504182, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
+  m_PrefabInstance: {fileID: 6118047591192402898}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &130928666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7079,7 +7090,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3504181, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3504182, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
+      propertyPath: m_margin.z
+      value: -0.71751785
       objectReference: {fileID: 0}
     - target: {fileID: 796740308, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
       propertyPath: m_IsActive
@@ -7089,6 +7104,10 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 796740310}
+    - target: {fileID: 1405703961, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
+      propertyPath: _scoreTxt
+      value: 
+      objectReference: {fileID: 126430268}
     - target: {fileID: 5648966037558779634, guid: 1db09794e41e11642af38b243e875cc5, type: 3}
       propertyPath: m_Name
       value: HUD

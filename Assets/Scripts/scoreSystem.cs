@@ -32,4 +32,9 @@ public class scoreSystem : MonoBehaviour
         }
         Debug.Log(score);
     }
+
+    public float GetScore()
+    {
+        return score;
+    }
 }
