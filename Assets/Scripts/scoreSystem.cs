@@ -21,7 +21,16 @@ public class scoreSystem : MonoBehaviour
         {
             AddScore();
         }
+     //   else if (timerSystem.GetTimesUp())
+     //   {
+     //       SaveData();
+     //   }
     }
+
+   // public void SaveData()
+   // {
+   //     SaveSystem.SaveState(this);
+   // }
 
     private void AddScore()
     {
