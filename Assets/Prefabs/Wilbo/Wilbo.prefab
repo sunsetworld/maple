@@ -590,6 +590,7 @@ MonoBehaviour:
   velocity: {x: 50, y: 50}
   HUDTxt: {fileID: 0}
   wilboHasStopped: 0
+  GameOverHUD: {fileID: 6201112363735074069, guid: 0d8a3cff628d97141a087f930cf03830, type: 3}
 --- !u!114 &3660348935477794351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,7 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1ba77afc1f104419724fb2eced235d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finishTime: 60
+  finishTime: 5
 --- !u!114 &4439171896623151322
 MonoBehaviour:
   m_ObjectHideFlags: 0

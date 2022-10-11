@@ -13,12 +13,15 @@ public class wilboMovement : MonoBehaviour
     public Vector2 velocity;
 
     private Timer _timer;
-    
+
     bool _hasJumped;
 
     public Animator HUDTxt;
-    
+
     public bool wilboHasStopped = false;
+
+    [SerializeField] GameObject GameOverHUD;
+    bool hasGameOverHUDSpawned = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,18 +35,22 @@ public class wilboMovement : MonoBehaviour
     void Update()
     {
         // Debug.Log(_myRigidbody.velocity );
+        GameOver();
     }
 
     void OnJump(InputValue action)
     {
         if (action.isPressed)
         {
-            // Instantiate(wilbo, transform.position, Quaternion.identity);
-            if (!_hasJumped)
+            if (!_timer.GetTimesUp())
             {
-                wilboJump(1);
-                _hasJumped = true;
+                if (!_hasJumped)
+                {
+                    wilboJump(1);
+                    _hasJumped = true;
+                }
             }
+
         }
     }
 
@@ -60,13 +67,25 @@ public class wilboMovement : MonoBehaviour
 
     public void GameOver()
     {
-        
+        if (_timer.GetTimesUp())
+        {
+            if (!hasGameOverHUDSpawned)
+            {
+                Instantiate(GameOverHUD);
+                hasGameOverHUDSpawned = true;
+            }
+        }
     }
 
     public bool GetHasJumped()
     {
         return _hasJumped;
     }
-    
-    
+
+    void checkForMovement()
+    {
+
+    }
+
+
 }

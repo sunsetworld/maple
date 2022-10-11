@@ -30,9 +30,7 @@ public class Timer : MonoBehaviour
         checkForTimesUp();
         
         Debug.Log("Times up: " + _timesUp);
-        
-        GameOver();
-        
+                
     }
 
     void checkForTimesUp()
@@ -63,11 +61,5 @@ public class Timer : MonoBehaviour
         _timesUp = true;
     }
 
-    void GameOver()
-    {
-        if (_timesUp)
-        {
-            wilbo.GameOver();
-        }
-    }
+
 }
