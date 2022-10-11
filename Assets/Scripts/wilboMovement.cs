@@ -35,6 +35,7 @@ public class wilboMovement : MonoBehaviour
     void Update()
     {
         // Debug.Log(_myRigidbody.velocity );
+        CheckForMovement();
         GameOver();
     }
 
@@ -82,10 +83,14 @@ public class wilboMovement : MonoBehaviour
         return _hasJumped;
     }
 
-    void checkForMovement()
+    private void CheckForMovement()
     {
-
+        if (_hasJumped && !_timer.GetTimesUp())
+        {
+            if (_myRigidbody.velocity.y == 0 && _myRigidbody.velocity.x == 0)
+            {
+                _timer.TimesUp();
+            }
+        }
     }
-
-
 }

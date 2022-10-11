@@ -46,6 +46,8 @@ public class Timer : MonoBehaviour
 
     }
 
+
+
     public bool GetTimesUp()
     {
         return _timesUp;
