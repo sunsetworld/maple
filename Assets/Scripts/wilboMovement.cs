@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class wilboMovement : MonoBehaviour
 {
@@ -93,4 +94,19 @@ public class wilboMovement : MonoBehaviour
             }
         }
     }
+
+
+    void OnRestart()
+    {
+        Debug.Log("This should restart the game.");
+        SceneManager.LoadScene(0);
+
+    }
+
+    void OnQuit()
+    {
+        Debug.Log("This should quit the game.");
+        Application.Quit();
+    }
+
 }
