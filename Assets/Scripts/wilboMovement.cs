@@ -99,7 +99,8 @@ public class wilboMovement : MonoBehaviour
     void OnRestart()
     {
         Debug.Log("This should restart the game.");
-        SceneManager.LoadScene(0);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene);
 
     }
 
