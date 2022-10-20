@@ -967,6 +967,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2198598584731280810, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
+      propertyPath: m_GravityScale
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3864866589250669388, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
       propertyPath: m_Name
       value: WilboOrange
