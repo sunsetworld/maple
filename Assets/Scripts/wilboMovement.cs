@@ -16,6 +16,7 @@ public class wilboMovement : MonoBehaviour
     private Timer _timer;
 
     bool _hasJumped;
+    bool _hasDoubleJumped;
 
     public Animator HUDTxt;
 
@@ -50,6 +51,11 @@ public class wilboMovement : MonoBehaviour
                 {
                     wilboJump(1);
                     _hasJumped = true;
+                }
+                else if (_hasJumped && !_hasDoubleJumped)
+                {
+                    wilboJump(2);
+                    _hasDoubleJumped = true;
                 }
             }
 
@@ -110,4 +116,8 @@ public class wilboMovement : MonoBehaviour
         Application.Quit();
     }
 
+    public void SetDoubleJump()
+    {
+        _hasDoubleJumped = false;
+    }
 }
