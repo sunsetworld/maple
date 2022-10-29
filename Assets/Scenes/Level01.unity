@@ -1324,7 +1324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4123989134039215923, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7777778
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4123989134039215923, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
       propertyPath: m_Lens.OrthographicSize
@@ -1341,6 +1341,14 @@ PrefabInstance:
     - target: {fileID: 4980203276044981223, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
       propertyPath: m_LocalPosition.z
       value: -10.051595
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050140292382154825, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
+      propertyPath: shakeTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050140292382154825, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
+      propertyPath: shakeIntensity
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95834a17fe0f5c14e9c0e5b57bf0a7b0, type: 3}
