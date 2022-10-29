@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 966358176347190690, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966358176347190690, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 966358176347190690, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: m_ZDamping
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3107552378051976568, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
       propertyPath: m_Name
       value: WilboOrange
@@ -54,6 +66,26 @@ PrefabInstance:
     - target: {fileID: 3107552378051976571, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602208598588081619, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.90325546
+      objectReference: {fileID: 0}
+    - target: {fileID: 6602208598588081619, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.650528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157472694376724093, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: cShake
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157472694376724093, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: shakeTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157472694376724093, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
+      propertyPath: shakeIntensity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8157472694376724093, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
       propertyPath: myParticleSystem

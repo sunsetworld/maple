@@ -23,13 +23,13 @@ public class wilboMovement : MonoBehaviour
 
     [SerializeField] GameObject GameOverHUD;
     bool hasGameOverHUDSpawned = false;
+
     // Start is called before the first frame update
     void Start()
     {
         _myRigidbody = GetComponent<Rigidbody2D>();
         _timer = GetComponent<Timer>();
         _hasJumped = false;
-
     }
 
     // Update is called once per frame
