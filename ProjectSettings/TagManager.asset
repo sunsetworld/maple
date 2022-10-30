@@ -52,6 +52,12 @@ TagManager:
   - name: Particles
     uniqueID: 993253389
     locked: 0
+  - name: Trees
+    uniqueID: 3988942935
+    locked: 0
+  - name: Platform/Trampoline
+    uniqueID: 2474419671
+    locked: 0
   - name: Player
     uniqueID: 724653021
     locked: 0
