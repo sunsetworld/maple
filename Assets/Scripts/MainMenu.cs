@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] AudioClip HUDSound;
 
     public void playGame()
     {
@@ -14,6 +15,11 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene("Settings");
     }
 
     

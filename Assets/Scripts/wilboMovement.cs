@@ -25,11 +25,15 @@ public class wilboMovement : MonoBehaviour
     [SerializeField] GameObject GameOverHUD;
     bool hasGameOverHUDSpawned = false;
 
+    public AudioSource audioSource;
+    [SerializeField] AudioClip bounceAudio;
+
     // Start is called before the first frame update
     void Start()
     {
         _myRigidbody = GetComponent<Rigidbody2D>();
         _timer = GetComponent<Timer>();
+        audioSource = GetComponent<AudioSource>();
         _hasJumped = false;
     }
 
@@ -68,6 +72,8 @@ public class wilboMovement : MonoBehaviour
         {
             _myRigidbody.velocity = _myRigidbody.velocity + velocity * amount;
             myParticleSystem.Play();
+            // AudioSource.PlayClipAtPoint(bounceAudio, transform.position);
+            audioSource.Play();
         }
 
     }

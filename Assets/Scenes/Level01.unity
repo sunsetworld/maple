@@ -251,15 +251,15 @@ Transform:
   - {fileID: 193592693}
   - {fileID: 476115722}
   - {fileID: 2094805678}
-  - {fileID: 86739520}
-  - {fileID: 1800434817}
-  - {fileID: 1134948867}
-  - {fileID: 1798797571}
   - {fileID: 1231351332}
+  - {fileID: 86739520}
   - {fileID: 260373286}
   - {fileID: 1339882699}
+  - {fileID: 1800434817}
   - {fileID: 1896513379}
+  - {fileID: 1134948867}
   - {fileID: 1110475477}
+  - {fileID: 1798797571}
   - {fileID: 615286403}
   - {fileID: 650319229}
   - {fileID: 1533877389}
@@ -10472,6 +10472,10 @@ Transform:
   - {fileID: 1210290265}
   - {fileID: 1198637162}
   - {fileID: 821099793}
+  - {fileID: 1257328068}
+  - {fileID: 73556867}
+  - {fileID: 185432622}
+  - {fileID: 1316139611}
   - {fileID: 854528409}
   - {fileID: 301192667}
   - {fileID: 723230123}
@@ -10479,10 +10483,6 @@ Transform:
   - {fileID: 959660438}
   - {fileID: 1236168605}
   - {fileID: 1907095508}
-  - {fileID: 1316139611}
-  - {fileID: 73556867}
-  - {fileID: 185432622}
-  - {fileID: 1257328068}
   - {fileID: 1039261491}
   - {fileID: 139943735}
   m_Father: {fileID: 0}
@@ -14162,7 +14162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5850456603175029293, guid: 27ceb9402c99b4ed59281797f6756158, type: 3}
       propertyPath: Mute
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5850456603175029299, guid: 27ceb9402c99b4ed59281797f6756158, type: 3}
       propertyPath: m_Name

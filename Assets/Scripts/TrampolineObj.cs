@@ -36,7 +36,7 @@ public class TrampolineObj : MonoBehaviour
                 if (canProvideDoubleJump)
                 {
                     wilbo.SetDoubleJump();
-                }
+                } 
             }
         }
 

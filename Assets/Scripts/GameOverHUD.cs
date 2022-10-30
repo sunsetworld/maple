@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverHUD : MonoBehaviour
 {
+    [SerializeField] AudioClip HUDSound;
    
     public void RestartGame()
     {

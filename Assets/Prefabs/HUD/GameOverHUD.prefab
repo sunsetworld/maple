@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9c83f9ee9999243a716d5d406a062d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDSound: {fileID: 8300000, guid: 6ff39f27a2a114cf6811b72500f20ef7, type: 3}
 --- !u!1 &6201112363806902064
 GameObject:
   m_ObjectHideFlags: 0
