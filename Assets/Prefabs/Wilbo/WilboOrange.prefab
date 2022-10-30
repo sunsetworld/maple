@@ -19,10 +19,6 @@ PrefabInstance:
       propertyPath: m_ZDamping
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 2862503239616624903, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 3107552378051976568, guid: 616606d9b0ac2a5458c366e38645c7fa, type: 3}
       propertyPath: m_Name
       value: WilboOrange
