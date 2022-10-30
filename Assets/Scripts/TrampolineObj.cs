@@ -10,6 +10,7 @@ public class TrampolineObj : MonoBehaviour
     wilboMovement wilbo;
     private void OnCollisionEnter2D(Collision2D col)
     {
+        /*
         if (col.gameObject.CompareTag("Player"))
         {
             wilbo = col.gameObject.GetComponent<wilboMovement>();
@@ -23,6 +24,23 @@ public class TrampolineObj : MonoBehaviour
             }
 
         }
+        */
+
+        if (col.gameObject.CompareTag("Player"))
+        {
+            wilbo = FindObjectOfType<wilboMovement>();
+            if (wilbo != null)
+            {
+                wilbo.wilboJump(boostAmount);
+
+                if (canProvideDoubleJump)
+                {
+                    wilbo.SetDoubleJump();
+                }
+            }
+        }
+
+
     }
 
 
