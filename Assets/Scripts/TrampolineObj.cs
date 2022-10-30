@@ -8,6 +8,7 @@ public class TrampolineObj : MonoBehaviour
     [SerializeField] int boostAmount = 10;
     [SerializeField] bool canProvideDoubleJump;
     wilboMovement wilbo;
+    
     private void OnCollisionEnter2D(Collision2D col)
     {
         /*
@@ -32,6 +33,7 @@ public class TrampolineObj : MonoBehaviour
             if (wilbo != null)
             {
                 wilbo.wilboJump(boostAmount);
+                ScreenCapture.CaptureScreenshot("screenshot " + System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)") + ".png");
 
                 if (canProvideDoubleJump)
                 {
