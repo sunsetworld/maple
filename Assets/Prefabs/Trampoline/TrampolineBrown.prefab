@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2862759405207659570, guid: 26817a3ca825fd5499566278cf8d50e9, type: 3}
       propertyPath: m_Name
-      value: Trampoline Orange
+      value: TrampolineBrown
       objectReference: {fileID: 0}
     - target: {fileID: 2862759405207659571, guid: 26817a3ca825fd5499566278cf8d50e9, type: 3}
       propertyPath: m_Color.b
@@ -21,11 +21,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2862759405207659571, guid: 26817a3ca825fd5499566278cf8d50e9, type: 3}
       propertyPath: m_Color.g
-      value: 0.3764706
+      value: 0.23529412
       objectReference: {fileID: 0}
     - target: {fileID: 2862759405207659571, guid: 26817a3ca825fd5499566278cf8d50e9, type: 3}
       propertyPath: m_Color.r
-      value: 0.7529412
+      value: 0.3764706
       objectReference: {fileID: 0}
     - target: {fileID: 2862759405207659572, guid: 26817a3ca825fd5499566278cf8d50e9, type: 3}
       propertyPath: m_RootOrder
