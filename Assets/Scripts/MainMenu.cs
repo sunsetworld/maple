@@ -22,5 +22,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Settings");
     }
 
+    public void OpenInstructions()
+    {
+        SceneManager.LoadScene("instructions");
+    }
+
     
 }
