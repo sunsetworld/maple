@@ -1,20 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    private float _gameTime;
-    [SerializeField] float finishTime = 60;
-    private wilboMovement wilbo;
+    [SerializeField] private float gameTime = 60;
 
     private bool _timesUp;
     // Start is called before the first frame update
     void Start()
     {
-        _gameTime = 0;
-        _timesUp = false;
-        wilbo = GetComponent<wilboMovement>();
+        GetComponent<wilboMovement>();
     }
 
     // Update is called once per frame
@@ -22,9 +16,9 @@ public class Timer : MonoBehaviour
     {
         if (!_timesUp)
         {        
-            _gameTime += Time.deltaTime;
-            Debug.Log("Game time " + _gameTime.ToString());
-            
+            gameTime -= Time.deltaTime;
+            Debug.Log("Game time " + gameTime);
+
         }
 
         checkForTimesUp();
@@ -35,15 +29,15 @@ public class Timer : MonoBehaviour
 
     void checkForTimesUp()
     {
-        if (_gameTime >= finishTime)
-            {
-                _timesUp = true;
-            }
-            else if (_gameTime < finishTime)
-            {
-                _timesUp = false;
-            }
+        if (gameTime <= 0)
+        {
+            _timesUp = true;
+        }
 
+        else
+        {
+           _timesUp = false;
+        }
     }
 
 
@@ -55,7 +49,7 @@ public class Timer : MonoBehaviour
 
     public float GetTimer()
     {
-        return _gameTime;
+        return gameTime;
     }
 
     public void TimesUp()
